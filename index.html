@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Project</title>
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <h1>WebRTC Project</h1> 
+    <div id="videos">
+      <video class="video-player" id="user-1" autoplay playsinline></video>
+      <video class="video-player" id="user-2" autoplay playsinline></video>
+      
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/agora-rtm-sdk-1.5.1.js"></script>
+    <script type="module" src="/main.js"></script>
+
+
+    <div id="controls" style="text-align: center;">
+      <button type="button" class="control-button" id="camera-btn" aria-label="Camera">
+        📹
+      </button>
+    
+      <button type="button" class="control-button" id="mic-btn" aria-label="Microphone">
+        🎤
+      </button>
+      
+      <a href="lobby.html">
+        <button type="button" class="control-button" id="leave-btn" aria-label="Leave">
+          🏃
+        </button>
+
+      </a>
+      
+
+    </div>
+    
+    
+
+  </body>
+  <!-- <button id="leaveMeetingButton">Leave Meeting</button>
+  <button id="openCameraButton">Open Camera</button> -->
+</html>
